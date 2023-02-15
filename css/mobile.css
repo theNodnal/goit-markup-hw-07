@@ -1,0 +1,33 @@
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 428px;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .hero {
+    background-image: url(../images/hero-bg-tab.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: url(../images/hero-bg-tab-x2.jpg);
+    }
+  }
+
+  .category-item {
+    /* flex-basis: calc((100% - 3 * 24px) / 4); */
+    width: 396px;
+  }
+
+  .hero-title {
+    font-size: 48px;
+  }
+
+  .customers-item {
+    width: 190px;
+  }
+}
