@@ -8,13 +8,13 @@
   }
 
   .hero {
-    background-image: url(../images/hero-bg-tab.jpg);
+    background-image: var(--rgba), url(../images/hero-bg-mob.jpg);
   }
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .hero {
-      background-image: url(../images/hero-bg-tab-x2.jpg);
+      background-image: var(--rgba), url(../images/hero-bg-mob-x2.jpg);
     }
   }
 
@@ -24,7 +24,7 @@
   }
 
   .hero-title {
-    font-size: 48px;
+    /* font-size: 36px; */
   }
 
   .customers-item {

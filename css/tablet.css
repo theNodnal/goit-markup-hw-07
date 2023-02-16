@@ -2,15 +2,30 @@
   .container {
     max-width: 768px;
   }
+
   .hero {
-    background-image: url(../images/hero-bg-tab.jpg);
+    padding-bottom: 108px;
+  }
+
+  .hero-title {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+  }
+
+  .hero-btn {
+    margin-top: 40px;
+  }
+
+  .hero {
+    background-image: var(--rgba), url(../images/hero-bg-tab.jpg);
   }
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .hero {
-      background-image: url(../images/hero-bg-tab-x2.jpg);
+      background-image: var(--rgba), url(../images/hero-bg-tab-x2.jpg);
     }
   }
 
@@ -28,8 +43,9 @@
   }
 
   .category-item {
-    flex-basis: calc((100% - 3 * 24px) / 4);
+    /* flex-basis: calc((100% - 3 * 24px) / 4); */
     width: calc((100% - 24px) / 2);
+    row-gap: 72px;
   }
 
   .container.small-container {

@@ -3,6 +3,27 @@
     max-width: 1200px;
   }
 
+  .hero {
+    padding-top: 188px;
+    padding-bottom: 188px;
+  }
+
+  .hero-btn {
+    margin-top: 48px;
+  }
+
+  .hero {
+    background-image: var(--rgba), url(../images/hero-bg-desk.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: var(--rgba), url(../images/hero-bg-desk-x2.jpg);
+    }
+  }
+
   .category {
     padding-top: 120px;
     padding-bottom: 120px;
@@ -34,6 +55,7 @@
   }
 
   .main-team-item {
+    flex-basis: calc((100% - 3 * 24px) / 4);
     width: calc((100% - 24px) / 4);
   }
 
