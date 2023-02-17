@@ -30,7 +30,7 @@
   </head>
 
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header-container">
         <nav class="header-nav">
           <a class="header-logo link" href="./index.html">
@@ -63,8 +63,96 @@
             </li>
           </ul>
         </address>
+
+        <!---------------- mob-menu ---------------- -->
+
+        <button class="menu-open-btn" type="button" data-menu-open>
+            <svg class="mob-menu-open" width="30" height="20">
+              <use href="./images/symbol.svg#icon-mob-menu"></use>
+            </svg>
+        </button>
       </div>
-    </header> -->
+
+      <div class="mob-menu is hidden" data-menu>
+      <!-- <div class="mob-menu" data-menu> -->
+        <div class="container">
+      <div>
+            <button class="modal-close" type="button" data-menu-close>
+              <svg class="button-x" width="8" height="8">
+                <use href="./images/symbol.svg#icon-Vector-3"></use>
+              </svg>
+            </button>
+            <nav class="mob-menu-nav">
+              <ul class="mob-menu-list list">
+                <li class="mob-menu-item">
+                  <a href="./index.html" class="mob-menu-link link current"
+                    >Studio</a
+                  >
+                </li>
+                <li class="mob-menu-item">
+                  <a href="./portfolio.html" class="mob-menu-link link"
+                    >Portfolio</a
+                  >
+                </li>
+                <li class="mob-menu-item">
+                  <a href="" class="mob-menu-link link">Contacts</a>
+                </li>
+              </ul>
+            </nav>
+      </div>
+        <div>
+            <address>
+              <ul class="mob-menu-address list">
+                <li class="mob-menu-tel">
+                  <a href="tel:+110001111111" class="mob-menu-tel link">
+                    +11 (000) 111-11-11</a
+                  >
+                </li>
+                <li>
+                  <a href="mailto:info@devstudio.com" class="mob-menu-mail link">
+                    info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+            </address>
+  
+            <div class="mob-team-name">
+              <ul class="mob-soc-list list">
+                <li class="mob-soc-item">
+                  <a href="" class="mob-soc-link link">
+                    <svg class="mob-soc-icon" width="24" height="24">
+                      <use href="./images/symbol.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="mob-soc-item">
+                  <a href="" class="mob-soc-link link"
+                    ><svg class="mob-soc-icon" width="24" height="24">
+                      <use href="./images/symbol.svg#icon-twitter"></use></svg
+                  ></a>
+                </li>
+                <li class="mob-soc-item">
+                  <a href="" class="mob-soc-link link"
+                    ><svg class="mob-soc-icon" width="24" height="24">
+                      <use href="./images/symbol.svg#icon-facebook"></use></svg
+                  ></a>
+                </li>
+                <li class="mob-soc-item">
+                  <a href="" class="mob-soc-link link"
+                    ><svg class="mob-soc-icon" width="24" height="24">
+                      <use href="./images/symbol.svg#icon-linkedin"></use></svg
+                  ></a>
+                </li>
+              </ul>
+            </div>
+        </div>
+        </div>
+
+        <!-- ------------- -->
+      </div>
+    </header>
+
+    <!----------------- <main> ---------------->
 
     <main>
       <section class="hero">
@@ -88,13 +176,13 @@
                   <use href="./images/symbol.svg#icon-antenna"></use>
                 </svg>
               </div>
-             <div class="category-all-text">
+              <div class="category-all-text">
                 <h3 class="category-suptext">Strategy</h3>
                 <p class="category-text">
                   Our goal is to identify the business problem to walk away with
                   the perfect and creative solution.
                 </p>
-             </div>
+              </div>
             </li>
             <li class="category-item">
               <div class="category-link link">

@@ -3,6 +3,22 @@
     max-width: 1200px;
   }
 
+
+  /* ------------- header ------------- */
+
+  .address {
+    display: flex;
+  }
+
+
+/* ------------- hero ------------ */
+
+
+.header-container {
+  height: 76px;
+}
+
+
   .hero {
     padding-top: 188px;
     padding-bottom: 188px;
