@@ -19,12 +19,9 @@
   }
 
   .category-item {
-    /* flex-basis: calc((100% - 3 * 24px) / 4); */
-    width: 396px;
   }
 
   .hero-title {
-    /* font-size: 36px; */
   }
 
   .customers-item {

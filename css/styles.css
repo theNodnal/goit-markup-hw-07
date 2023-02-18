@@ -57,6 +57,10 @@ img {
   text-decoration: none;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .container {
   padding-left: 15px;
   padding-right: 15px;
@@ -110,28 +114,27 @@ img {
 
 
 .menu-open-btn {
-    fill: currentColor;
-    fill: var(--main-color);
-    color: var(--border-portfolio-btn);
-    
-    /* display: block; */
-    /* margin-left: auto; */
-  }
+border: none;
+background: none;
+    color: var(--main-color);
 
+  }
+  
   .mob-menu-open {
-    fill: red;
+    stroke: currentColor;
     margin: auto;
     display: block;
   }
-
-.mob-menu {
-  position: fixed;
-  top: 0;
-  z-index: 1;
-  width: 100%;
-  height: 100vh;
+  
+  .mob-menu {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
   background-color: var(--background-color);
-  padding: 40px;
+  /* padding: 40px; */
+  
 }
 
 .mob-menu > .container {
@@ -142,6 +145,7 @@ img {
 }
 
 .mob-menu-list {
+  margin-top: 30px;
 }
 
 .mob-menu-item:not(:last-child) {
@@ -150,11 +154,11 @@ img {
 
 .mob-menu-link {
   font-weight: 700;
-font-size: 36px;
-line-height: 40px;
-letter-spacing: 1.11;
-text-transform: capitalize;
-color: var(--main-color)
+  font-size: 36px;
+  line-height: 40px;
+  letter-spacing: 1.11;
+  text-transform: capitalize;
+  color: var(--main-color)
 }
 
 .mob-menu-address {
@@ -162,19 +166,23 @@ color: var(--main-color)
 
 .mob-menu-mail {
   font-weight: 500;
-font-size: 20px;
-line-height: 24px;
-letter-spacing: 1.2;
-color: var(--second-color);
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 1.2;
+  color: var(--second-color);
 }
 
 .mob-menu-tel {
   font-weight: 600;
-font-size: 21px;
-line-height: 40px;
-text-transform: capitalize;
-color: #4D5AE5;
-color:var(--hover-color);
+  font-size: 21px;
+  line-height: 40px;
+  text-transform: capitalize;
+  color: #4D5AE5;
+  color:var(--hover-color);
+}
+
+.mob-team-name {
+  padding-bottom: 40px;
 }
 
 .mob-menu-tel {
@@ -194,6 +202,10 @@ color:var(--hover-color);
 }
 
 .mob-soc-item {
+}
+.mob-close-btn {
+padding-right: 10px;
+  padding-top: 25px;
 }
 
 .mob-soc-link {
@@ -325,8 +337,10 @@ color:var(--hover-color);
 }
 
 .category-list {
-  display: block;
-  gap: 24px;
+  display: grid;
+  gap: 72px;
+
+  /* grid-template-columns: 1fr 1fr; */
 }
 
 .category-link {
@@ -341,10 +355,10 @@ color:var(--hover-color);
 }
 
 .category-item:not(:last-child) {
-  width: 100%;
+  /* width: 100%; */
   /* flex-basis: calc((100% - 3 * 24px) / 4); */
   /* column-gap: 24px; */
-  margin-bottom: 72px;
+  /* margin-bottom: 72px; */
 }
 
 .category-suptext {
@@ -566,12 +580,21 @@ color:var(--hover-color);
 
 .footer-container {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 72px;
+}
+
+.footer-slogan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .footer {
   background: var(--main-color);
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .footer-accent {
@@ -594,7 +617,10 @@ color:var(--hover-color);
   line-height: 24px;
   letter-spacing: 0.02em;
   color: var(--background-color);
-  margin-left: 120px;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  /* margin-left: 120px; */
 }
 
 .footer-team-soc-list {
@@ -646,7 +672,8 @@ color:var(--hover-color);
   align-items: center;
   padding-left: 16px;
   height: 40px;
-  width: 264px;
+  /* width: 264px; */
+  width: 100%;
   color: var(--background-color);
   background: var(--main-color);
   display: flex;
@@ -672,11 +699,19 @@ color:var(--hover-color);
   letter-spacing: 0.02em;
   line-height: 24px;
   color: var(--background-color);
+  text-align: center;
+}
+
+.subscribe-form {
+  width: 100%;
 }
 
 .footer-main-subscribe {
-  margin-left: 80px;
+  width: 100%;
+  /* margin-left: 80px; */
   display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .subscribe-push {
@@ -685,9 +720,9 @@ color:var(--hover-color);
 }
 
 .subscribe-button {
-  margin-top: 40px;
+  margin-top: 16px;
   height: 40px;
-  margin-left: 24px;
+  /* margin-left: 24px; */
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -815,7 +850,6 @@ color:var(--hover-color);
   display: block;
   margin-left: auto;
   transition: color 250ms var(--cubic), background-color 250ms var(--cubic);
-  margin-bottom: 24px;
 }
 
 .modal-title {
@@ -823,6 +857,7 @@ color:var(--hover-color);
   line-height: 1.5;
   text-align: center;
   margin-bottom: 14px;
+  margin-top: 24px;
 }
 
 .modal-field {

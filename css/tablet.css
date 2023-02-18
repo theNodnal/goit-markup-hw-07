@@ -18,6 +18,10 @@
   /* ---------------- header ----------------- */
   
 
+  .menu-open-btn {
+    display: none;
+  }
+
   .header-list {
     display: flex;
     gap: 40px;
@@ -110,13 +114,11 @@
   }
 
   .category-list {
-    display: flex;
-    flex-wrap: wrap;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 24px;
   }
 
   .category-item {
-    /* flex-basis: calc((100% - 3 * 24px) / 4); */
-    width: calc((100% - 24px) / 2);
   }
 
   .container.small-container {
@@ -144,4 +146,45 @@
   .customers-list {
     column-gap: 24px;
   }
+  
+  /* ------------------ footer --------------- */
+
+  
+.footer {
+  display: flex;
+  align-items: center;
+}
+
+.footer-slogan {
+  align-items: flex-start;
+}
+
+  .footer-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  
+.footer-social {
+  align-items: start;
+}
+
+.footer-main-subscribe {
+  justify-content: center;
+  flex-shrink: 0;
+  align-items: end;
+  flex-direction: row;
+  gap: 24px;
+}
+
+.subscribe-form {
+  width: 264px;
+}
+
+.footer-subscribe {
+  text-align: left;
+}
+
 }
