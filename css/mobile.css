@@ -18,13 +18,12 @@
     }
   }
 
-  .category-item {
-  }
-
-  .hero-title {
+  .modal {
+    min-width: 408px;
   }
 
   .customers-item {
     width: 190px;
   }
 }
+

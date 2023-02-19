@@ -57,7 +57,7 @@ img {
   text-decoration: none;
 }
 
-.no-scroll {
+.js-menu-container {
   overflow: hidden;
 }
 
@@ -112,37 +112,35 @@ img {
 
 /* ------------- mob-menu ---------------- */
 
-
 .mob-menu.is-open {
   transform: translateX(0);
 }
 
 .menu-open-btn {
-border: none;
-background: none;
-    color: var(--main-color);
+  border: none;
+  background: none;
+  color: var(--main-color);
+}
 
-  }
-  
-  .mob-menu-open {
-    stroke: currentColor;
-    margin: auto;
-    display: block;
-  }
-  
-  .mob-menu {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    width: 100%;
-    height: 100vh;
-    overflow: scroll;
-   transform: translateX(100%);
-   transition-property: transform;
+.mob-menu-open {
+  stroke: currentColor;
+  margin: auto;
+  display: block;
+}
+
+.mob-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100vh;
+  overflow: scroll;
+  transform: translateX(100%);
+  transition-property: transform;
   background-color: var(--background-color);
   /* padding: 40px; */
-  }
+}
 
 .mob-menu > .container {
   height: 100%;
@@ -165,7 +163,7 @@ background: none;
   line-height: 40px;
   letter-spacing: 1.11;
   text-transform: capitalize;
-  color: var(--main-color)
+  color: var(--main-color);
 }
 
 .mob-menu-address {
@@ -185,8 +183,8 @@ background: none;
   font-size: 21px;
   line-height: 40px;
   text-transform: capitalize;
-  color: #4D5AE5;
-  color:var(--hover-color);
+  color: #4d5ae5;
+  color: var(--hover-color);
   font-style: normal;
 }
 
@@ -213,7 +211,7 @@ background: none;
 .mob-soc-item {
 }
 .mob-close-btn {
-padding-right: 10px;
+  padding-right: 10px;
   padding-top: 25px;
 }
 
@@ -228,8 +226,6 @@ padding-right: 10px;
   border-radius: 50%;
   transition: color 250ms var(--cubic), background-color 250ms var(--cubic);
 }
-
-
 
 .mob-soc-link:is(:hover, :focus) {
   background-color: var(--hover-btn-color);
@@ -260,7 +256,6 @@ padding-right: 10px;
     background-image: var(--rgba), url(../images/hero-bg-mob-x2.jpg);
   }
 }
-
 
 .hero-content {
   justify-items: center;
@@ -323,9 +318,7 @@ padding-right: 10px;
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-
 /* ----------------------- category ------------------- */
-
 
 .category {
   padding-top: 96px;
@@ -822,8 +815,9 @@ padding-right: 10px;
 
 .modal {
   position: absolute;
-  min-width: 408px;
   min-height: 576px;
+  width: 100%;
+  max-width: 408px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);

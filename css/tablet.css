@@ -14,6 +14,10 @@
     background-color: var(--hover-btn-color);
   }
 
+  .modal {
+    min-width: 408px;
+  }
+
 
   /* ---------------- header ----------------- */
   
