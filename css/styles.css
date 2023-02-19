@@ -113,6 +113,10 @@ img {
 /* ------------- mob-menu ---------------- */
 
 
+.mob-menu.is-open {
+  transform: translateX(0);
+}
+
 .menu-open-btn {
 border: none;
 background: none;
@@ -129,13 +133,16 @@ background: none;
   .mob-menu {
     position: fixed;
     top: 0;
+    left: 0;
     z-index: 1;
     width: 100%;
     height: 100vh;
+    overflow: scroll;
+   transform: translateX(100%);
+   transition-property: transform;
   background-color: var(--background-color);
   /* padding: 40px; */
-  
-}
+  }
 
 .mob-menu > .container {
   height: 100%;
@@ -170,6 +177,7 @@ background: none;
   line-height: 24px;
   letter-spacing: 1.2;
   color: var(--second-color);
+  font-style: normal;
 }
 
 .mob-menu-tel {
@@ -179,6 +187,7 @@ background: none;
   text-transform: capitalize;
   color: #4D5AE5;
   color:var(--hover-color);
+  font-style: normal;
 }
 
 .mob-team-name {
@@ -236,7 +245,7 @@ padding-right: 10px;
   padding-top: 112px;
   padding-bottom: 112px;
   background-image: var(--rgba), url(../images/hero-bg-mob.jpg);
-  /* max-width: 1440px; */
+  max-width: 1440px;
   flex-grow: 1;
   margin: 0 auto;
   background-position: center;
@@ -248,19 +257,9 @@ padding-right: 10px;
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .hero {
-    background-image: var(--gra), url(../images/hero-bg-mob-x2.jpg);
+    background-image: var(--rgba), url(../images/hero-bg-mob-x2.jpg);
   }
 }
-
-/* .hero {
-  background-color: #626060;
-  background-image: var(--rgba), url(../images/hero-bg-mob.jpeg);
-  flex-grow: 1;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  padding: 210px 30px;
-} */
 
 
 .hero-content {
@@ -286,7 +285,7 @@ padding-right: 10px;
   padding: 16px 32px;
   background: var(--hover-color);
   color: var(--background-color);
-  margin-top: 88px;
+  margin-top: 72px;
   margin-left: auto;
   margin-right: auto;
   border-radius: 4px;

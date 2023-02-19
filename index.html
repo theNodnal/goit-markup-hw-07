@@ -73,18 +73,18 @@
 
         <!---------------- mob-menu ---------------- -->
 
-        <button class="menu-open-btn" data-menu-open type="button">
+        <button class="menu-open-btn js-open-menu" data-menu-open type="button">
           <svg class="mob-menu-open" width="30" height="20">
             <use href="./images/symbol.svg#icon-menu"></use>
-            <!-- <svg class="icon icon-Vector-6"><use xlink:href="#icon-Vector-6"></use></svg> -->
           </svg>
         </button>
       </div>
-      <div class="mob-menu is-hidden" data-menu>
-        <div class="mob-menu" data-menu>
+
+
+      <div class="mob-menu js-menu-container">
         <div class="container">
           <div>
-            <div class="mob-close-btn">
+            <div class="mob-close-btn js-close-menu">
               <button class="modal-close" data-menu-close type="button">
                 <svg class="button-x" width="8" height="8">
                   <use href="./images/symbol.svg#icon-Vector-3"></use>
@@ -676,11 +676,11 @@
               <a class="privacy-policy" href=""> Privacy Policy</a></label
             >
           </div>
-
           <button class="submit-button" type="submit">Send</button>
         </form>
       </div>
     </div>
+
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
   </body>
